@@ -6,6 +6,19 @@ gem 'rails', '4.0.3'
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
 	gem 'sqlite3'
+	gem 'better_errors'
+	gem 'binding_of_caller'
+
+	gem 'rspec-rails'
+	gem 'factory_girl_rails'
+	gem 'capybara'
+	gem 'fakeweb'
+
+	gem 'listen', '3.0.0'
+	gem 'guard'
+	gem 'guard-rspec'
+	
+	gem 'rb-fsevent'
 end
 
 # Use SCSS for stylesheets
