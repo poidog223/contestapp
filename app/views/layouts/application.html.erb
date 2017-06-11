@@ -45,7 +45,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Contestapp</a>
+        <a class="navbar-brand" href="/">Contestapp</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Accounts", accounts_path  %></li>
@@ -56,13 +56,24 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
+    <div class="row-fluid">
+      <% if content_for?(:sidebar) %>
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <%= yield(:sidebar) %>
+          </div>
+        </div>
+        <div class="span9">
           <%= bootstrap_flash %>
           <%= yield %>
         </div>
-      </div><!--/row-->
+      <% else %>
+        <div class="span12">
+          <%= bootstrap_flash %>
+            <%= yield %>
+        </div>
+      <% end %>
+    </div>
 
       <footer>
         <p>&copy; Company 2017</p>
