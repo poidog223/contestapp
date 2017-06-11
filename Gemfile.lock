@@ -114,12 +114,15 @@ GEM
     mini_portile2 (2.2.0)
     minitest (4.7.5)
     multi_json (1.12.1)
+<<<<<<< HEAD
     nenv (0.3.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
+=======
+>>>>>>> 65fd40552cc985db039a0bd45bc157b5f2fd0481
     pg (0.20.0)
     polyglot (0.3.5)
     pry (0.10.4)
@@ -236,7 +239,10 @@ DEPENDENCIES
   guard-rspec
   jbuilder (~> 1.2)
   jquery-rails
+<<<<<<< HEAD
   listen (= 3.0.0)
+=======
+>>>>>>> 65fd40552cc985db039a0bd45bc157b5f2fd0481
   pg
   rails (= 4.0.3)
   rails_12factor
